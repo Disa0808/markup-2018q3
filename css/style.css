@@ -7,6 +7,28 @@
 }
 
 @font-face {
+  font-family: 'lato-light';
+  src: url("../fonts/lato-light/lato-light.eot");
+  src: url("../fonts/lato-light/lato-light.eot") format("embedded-opentype"),
+       url("../fonts/lato-light/lato-light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'lato-thin';
+  src: url("../fonts/lato-thin/lato-thin.eot");
+  src: url("../fonts/lato-thin/lato-thin.eot") format("embedded-opentype"),
+       url("../fonts/lato-thin/lato-thin.woff2") format("woff2"),
+       url("../fonts/lato-thin/lato-thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'lato-bold';
+  src: url("../fonts/lato-bold/lato-bold.eot");
+  src: url("../fonts/lato-bold/lato-bold.eot") format("embedded-opentype"),
+       url("../fonts/lato-bold/lato-bold.woff2") format("woff2");
+}
+
+@font-face {
   font-family: 'lato-thin';
   src: url('../fonts/Lato-Thin.ttf');
   src: url('../fonts/lato-thin.eot') format('embedded-opentype')
@@ -63,6 +85,11 @@
 a {
   text-decoration: none;
   color: #ffffff;
+}
+
+.container_block {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 body,html {
@@ -752,4 +779,63 @@ a {
 
 .social-link.active i {
   color: #1f89ba;
+}
+
+.social-link:hover i {
+  color: #1f89ba;
+}
+
+.comments {
+  background: #303030 url("../img/comments_bg.jpg") 100% 70% no-repeat;
+  background-size: cover;
+}
+
+.container_block {
+  margin: 0 auto;
+  width:80%;
+}
+
+.comment_bg {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 45px 0 50px 0;
+}
+
+.comment__text {
+  font-family: 'lato-light', Arial, sans-serif;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 10px;
+  width:80%;
+  margin: 0 auto;
+}
+
+.comment__author {
+  font-family: 'lato-bold', Arial, sans-serif;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  padding-right: 70px;
+}
+
+.comments_block .owl-dots .owl-dot {
+  width: 8px;
+  height: 8px;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  margin-left: 12px;
+}
+
+.comments_block .owl-dots .owl-dot.active {
+  background: #ffffff;
+}
+
+.comments_block .owl-dots {
+  display: inline-block;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 50%;
+  bottom: 4px;
+  margin-left: 18px;
 }
