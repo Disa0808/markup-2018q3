@@ -7,6 +7,13 @@
 }
 
 @font-face {
+  font-family: 'lato-heavy';
+  src: url("../fonts/lato-heavy/lato-heavy.eot");
+  src: url("../fonts/lato-heavy/lato-heavy.eot") format("embedded-opentype"),
+       url("../fonts/lato-heavy/lato-heavy.woff2") format("woff2");
+}
+
+@font-face {
   font-family: 'lato-light';
   src: url("../fonts/lato-light/lato-light.eot");
   src: url("../fonts/lato-light/lato-light.eot") format("embedded-opentype"),
@@ -838,4 +845,88 @@ a {
   left: 50%;
   bottom: 4px;
   margin-left: 18px;
+}
+
+.functions_container {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 78px;
+  justify-content: space-between;
+}
+
+.function_item {
+  width:225px;
+}
+
+.function_item__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  margin: 96px auto 15px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 20px;
+  transition: 0.4s all;
+}
+
+.function_item__icon.icon-1 {
+  background-color: #f1c40f;
+}
+
+.function_item__icon.icon-2 {
+  background-color: #0faff1;
+}
+
+.function_item__icon.icon-3 {
+  background-color: #95a5a6;
+}
+
+.function_item__icon.icon-4 {
+  background-color: #f1540f;
+
+}
+
+.function_item h2{
+  color: #303030;
+  font-family: "lato-heavy";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.function_item p {
+  margin-top:5px;
+}
+
+.function_item__icon.icon-4:hover {
+  box-shadow: 0 0 25px #f1540f;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  animation: icon4 2s linear infinite;   
+}
+
+.function_item__icon.icon-3:hover {
+  box-shadow: 0 0 25px #95a5a6;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+.function_item__icon.icon-2:hover {
+  box-shadow: 0 0 25px #0faff1;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+.function_item__icon.icon-1:hover {
+  box-shadow: 0 0 25px #f1c40f;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
