@@ -102,9 +102,9 @@ a {
 body,html {
   font-family: 'Lato';
   font-size: 16px;
-  width: 1600px;
   margin: 0 auto;
 }
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -477,7 +477,9 @@ padding: 40px 10px 20px 10px;
   background-color: #ffffff;
   text-align: center;
   transition: 0.4s;
+  width: 22%;
 }
+
 .basic-package:hover {
   box-shadow: 0 5px 10px #f9d423;
 }
@@ -1105,3 +1107,31 @@ a {
 .footer-phone-link:hover, .footer-email-link:hover {
   color: #fffefe;
 }
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+ .container {
+      width: 750px;
+  } 
+}
+
+@media (min-width: 992px) {
+ .container {
+      width: 970px;
+  } 
+}
+
+
+@media (min-width: 1200px) {
+ .container {
+      width: 1200px;
+  } 
+}
+
+
+
+
